@@ -1,0 +1,28 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div class="page-cont">
+    <form [formGroup]="editShoeForm" (ngSubmit)="onSubmit()" class="shoe-editing-form basic-form">
+        <div class="from-group">
+             <label for="model">Model: </label>
+             <input type="text" name="model" id="model" formControlName="model">
+         </div>
+         <div class="from-group">
+             <label for="type">Type: </label>
+             <input type="text" name="type" id="type" formControlName="type">
+         </div>
+         <div class="from-group">
+             <label for="pric">Price: </label>
+             <input type="numbr" name="price" id="pric" formControlName="price">
+         </div>
+         <div class="from-group">
+             <label for="img-url">Image URL: </label>
+             <input type="url" name="img-url" id="img-url" formControlName="imgUrl">
+         </div>
+         <div class="save">
+             <button class="btn">Save</button>
+         </div>
+    </form>
+ </div>
+ 
+
+

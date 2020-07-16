@@ -1,0 +1,14 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div class="page-cont">
+    <a *ngFor="let shoe of shoes" class="shoe-row" [routerLink]="['/shoe', shoe.id]">
+        <div class="shoe-img">
+            <img src="{{ shoe.imgUrl }}" alt="">
+        </div>
+        <div class="shoe-desc">
+            <h3 class="shoe-model">{{ shoe.model }}</h3>
+            <p class="shoe-type">{{ shoe.type }}</p>
+        </div>
+        <div class="price">{{ shoe.price }} ₾</div>
+    </a>
+</div>

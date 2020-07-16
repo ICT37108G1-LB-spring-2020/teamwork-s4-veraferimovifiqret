@@ -1,13 +1,13 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
+  "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "exam": {
+    "shoe-store": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "sass"
         }
       },
       "root": "",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/exam",
+            "outputPath": "dist/shoe-store",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.sass"
             ],
             "scripts": []
           },
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "exam:build"
+            "browserTarget": "shoe-store:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "exam:build:production"
+              "browserTarget": "shoe-store:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "exam:build"
+            "browserTarget": "shoe-store:build"
           }
         },
         "test": {
@@ -92,7 +92,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.sass"
             ],
             "scripts": []
           }
@@ -114,19 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "exam:serve"
+            "devServerTarget": "shoe-store:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "exam:serve:production"
+              "devServerTarget": "shoe-store:serve:production"
             }
           }
         }
       }
-    }
-  },
-  "defaultProject": "exam",
-  "cli": {
-    "analytics": "d6bd9b7e-11c3-484c-9666-2024d42ac54e"
-  }
+    }},
+  "defaultProject": "shoe-store"
 }

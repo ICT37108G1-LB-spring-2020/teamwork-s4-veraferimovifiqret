@@ -1,0 +1,27 @@
+.shoe-cont
+    display: flex
+    flex-direction: column
+    @media (min-width: 992px) 
+        flex-direction: row
+    .shoe-img
+        margin-bottom: 30px
+        @media (min-width: 992px) 
+            width: 50%
+            padding-right: 30px            
+        img
+            width: 100%
+            max-height: calc( 100vh - 200px )
+            object-fit: contain
+    .shoe-desc
+        border-collapse: collapse
+        th, td
+            border: 1px solid silver
+        th
+            padding: 15px
+            text-align: left
+            @media (min-width: 992px) 
+                padding-right: 50px
+        td
+            padding: 15px
+            @media (min-width: 992px) 
+                padding-right: 100px

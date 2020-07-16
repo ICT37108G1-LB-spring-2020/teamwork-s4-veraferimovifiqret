@@ -1,0 +1,32 @@
+{
+  "shoes": [
+    {
+      "model": "HP 15 DA0480UR 8NF55EA",
+      "type": "ბიზნეს კლასი",
+      "price": "1399",
+      "imgUrl": "https://img.zoommer.ge/zoommer-images/thumbs/0112843_hp-15-da0480ur-8nf55ea-black_550.png",
+      "id": 1
+    },
+    {
+      "model": "ASUS TUF 15 FX505GT-AL037",
+      "type": "გეიმინგი",
+      "price": "3399",
+      "imgUrl": "https://img.zoommer.ge/zoommer-images/thumbs/0117521_asus-tuf-15-fx505gt-al037_550.png",
+      "id": 2
+    },
+    {
+      "model": "Asus TUF 15 FX505DT-BQ078",
+      "type": "გეიმინგი",
+      "price": "2699",
+      "imgUrl": "https://img.zoommer.ge/zoommer-images/thumbs/0119747_asus-tuf-15-fx505dt-bq078-black_550.png",
+      "id": 3
+    },
+    {
+      "model": "Microsoft Surface Laptop",
+      "type": "ბიზნეს კლასი",
+      "price": "4199",
+      "imgUrl": "https://img.zoommer.ge/zoommer-images/thumbs/0112897_microsoft-surface-laptop-3-135-inches-intel-i5-10th-gen-8128gb-platinum_550.png",
+      "id": 4
+    }
+  ]
+}

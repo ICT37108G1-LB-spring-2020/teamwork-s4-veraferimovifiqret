@@ -1,0 +1,23 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div class="shoe-cont page-cont">
+    <div class="shoe-img">
+        <img src="{{ shoe.imgUrl }}" alt="">
+    </div>
+
+    <table class="shoe-desc">
+        <tr>
+            <th>Model:</th>
+            <td>{{ shoe.model}}</td>
+        </tr>
+        <tr>
+            <th>Type:</th>
+            <td>{{ shoe.type}}</td>
+        </tr>
+        <tr>
+            <th>Price:</th>
+            <td>{{ shoe.price}} $</td>
+        </tr>
+    </table>
+</div>
+
